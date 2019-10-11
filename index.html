@@ -5,29 +5,26 @@
     <meta content="telephone=no" name="format-detection" />
     <meta name="viewport" content="width=device-width, initial-scal=1.0,maxium-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="./public/index.css">
-    <script src="./public/index.js"></script>
     <title>网约房一点通</title>
   </head>
-    <style>
-     
-    </style>
   <body>
     <div>
         <img class="bg" src="./assets/flyer-bg.png" alt="">
         <div class="content"> 
           <div class="go-apply">
             <div>我已有门锁，</div>
-            <div class="go-btn" onclick="go()">点击免费申请正规民宿经营编号</div>
+            <div class="go-btn" onclick="goGuide()">点击免费申请正规民宿经营编号</div>
           </div>
           <div class="contact-us">
-            <div class="contact-text">
-              <div>我需要智能门锁，请扫描右侧二维码或</div>
-              <div>拨打客服电话400-888-0270预订。</div>
-            </div>
+            <div class="contact-text">我需要智能门锁，请扫描右侧二维码或拨打客服电话<span style="font-weight: bold;">400-888-0270</span>预订。</div>
             <img class="qr-code" src="./assets/QR-code.png">
           </div>
         </div>
     </div>
-
   </body>
+  <script>
+    function goGuide(){
+      window.location.href = "./guide.html";
+    }
+  </script>
 </html>

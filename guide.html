@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="viewport" content="width=device-width, initial-scal=1.0,maxium-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="./public/index.css">
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+    <title>网约房一点通</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./assets/number-one.png">
+      <img src="./assets/number-two.png">
+      <img onclick="goOurMiniApp()" src="./assets/number-three.png">
+    </div>
+  </body>
+  <script>
+    function goOurMiniApp(){
+      wx.miniProgram.navigateTo({url: 'pages/index/index'})
+    }
+  </script>
+</html>
