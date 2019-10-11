@@ -2,35 +2,61 @@
   /* 控制元素在移动设备上使用滚动回弹效果 */
   -webkit-overflow-scrolling: touch; 
 }
-html,body{
+html{
+  font-size: 16px; 
+}
+body{
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 100%;
-  font-size:10px;
   overflow-x: hidden;
+  color: #333333;
 }
 .bg{
   width: 100%;
   height: auto;
 }
 .content{
-  padding: 3rem 4rem;
+  padding: 0.85rem 1.25rem;
 }
 .content .go-apply{
-  height: 50px;
-  font-size:  28px;
-  line-height: 50px;
+  height: 2.5625rem;
+  font-size: 0.875rem;
+  line-height: 1.562rem;
+  letter-spacing: 1px;
+  border-bottom: 3px dotted #ccc;
 }
 .content .go-apply div{
   display: inline-block;
 }
-.content .go-apply .text{
-  /* width: 166px; */
-}
 .content .go-apply .go-btn{
-  width: 420px;
-  height: 50px;
+  width: 14rem;
+  height: 1.5625rem;
   border-radius: 2px;
   background-color:#3c55dd;
+  color:#fff;
+  font-weight: bold;
+  text-align: center;
+}
+.content .contact-us .contact-text{
+  display: inline-block;
+  position: relative;
+  font-size: 0.875rem;
+  width: 15.3125rem;;
+  height: 2rem;
+  position: relative;
+  top: -1.93rem;
+}
+.content .contact-us .qr-code{
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.content .contact-us .qr-code img{
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  right:-0.625rem;
 }
