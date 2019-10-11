@@ -1,0 +1,36 @@
+*{  
+  /* 控制元素在移动设备上使用滚动回弹效果 */
+  -webkit-overflow-scrolling: touch; 
+}
+html,body{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-size:10px;
+  overflow-x: hidden;
+}
+.bg{
+  width: 100%;
+  height: auto;
+}
+.content{
+  padding: 3rem 4rem;
+}
+.content .go-apply{
+  height: 50px;
+  font-size:  28px;
+  line-height: 50px;
+}
+.content .go-apply div{
+  display: inline-block;
+}
+.content .go-apply .text{
+  /* width: 166px; */
+}
+.content .go-apply .go-btn{
+  width: 420px;
+  height: 50px;
+  border-radius: 2px;
+  background-color:#3c55dd;
+}
