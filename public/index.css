@@ -58,13 +58,13 @@ body{
   text-align: center;
   position: absolute;
 }
-.content .contact-us{
+.contact-us{
   display: flex;  
   justify-content: space-between;
   align-items: center;
   margin:0.85rem 1.25rem 0.85rem 1.25rem;
 }
-.content .contact-us .contact-text{
+.contact-us .contact-text{
   max-width:17rem;
   display: inline-block;
   font-size: 0.875rem;
@@ -73,14 +73,14 @@ body{
   position: relative;
   margin-top: -1rem;
 }
-.content .contact-us .qr-code{
+.contact-us .qr-code{
   width: 5rem;
   height: 5rem;
   position: relative;
   right: -0.3125rem;
 }
 /* guide.html */
-.container img{
+.container .step{
   width: 100%;
   height: auto;
 }
