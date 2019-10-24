@@ -28,7 +28,8 @@
 <!--拍照 <input id="myfile" type="file" name="file" accept="image#zs#" capture="camera"> -->
 //拍视频
 
-<input type="file" name="video" id="video-input" accept="video#zs#" capture="user" onchange="videoChange()" />
+<!-- <input type="file" name="video" id="video-input" accept="video#zs#" capture="user" onchange="videoChange()" /> -->
+<input type="file" accept="video/*" capture="camcorder" onchange="videoChange()">
 
 <p style="font-size: 14px">附：
 <br>只允许调起摄像头，不允许选择文件
