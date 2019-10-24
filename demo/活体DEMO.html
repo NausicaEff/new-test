@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta name="HandheldFriendly" content="true" />
+
+    <meta name="MobileOptimized" content="320" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <title>input视频测试</title>
+
+  </head>
+  <body>
+    <span>这个是拍照</span><br>
+    <input type="file" accept="image#zs#" capture="camera"><br>
+    <span>这个是拍视频</span><br>
+    <input type="file" name="video-input" accept="video#zs#" capture="user" onchange="videoChange()"><br>
+    <span>只允许掉起摄像头，不允许选择文件，活体视频大小不能超过8MB,时长不能超过6秒</span><br>
+    <video id="video" width='300' height="300" controls autoplay></video><br>
+    <span id='info'></span>
+  </body>
+  <script>
+    function videoChange(){
+      var file = document.getElementById('video-input').files[0];
+      var fileSize = (Math.round(file.size/1024)).toFixed();
+      document.getElementById('info').innerHTML += "所录制视频大小约为："+(fileSize/1024).toFixed(2)+"Mb";
+      var url = URL.createObjectURL('file');
+      console.log(url);
+      document.getElementById('video').src = url;
+    }
+  
+  </script>
+</html>
