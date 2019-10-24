@@ -19,7 +19,7 @@
     <span>这个是拍照</span><br>
     <input type="file" accept="image#zs#" capture="camera"><br>
     <span>这个是拍视频</span><br>
-    <input type="file" name="video-input" accept="video#zs#" capture="user" onchange="videoChange()"><br>
+    <input type="file" name="video" id="video-input" accept="video#zs#" capture="user" onchange="videoChange()" /><br>
     <span>只允许掉起摄像头，不允许选择文件，活体视频大小不能超过8MB,时长不能超过6秒</span><br>
     <video id="video" width='300' height="300" controls autoplay></video><br>
     <span id='info'></span>
